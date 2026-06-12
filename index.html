@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>maz — Game creation made easy with AI</title>
+  <meta name="description" content="maz turns your ideas into playable games. AI-assisted game creation, no engine wrangling required." />
+
+  <link rel="icon" type="image/svg+xml" href="logo-white.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ambient cursor glow -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="maz home">
+      <span class="brand__logo">
+        <img src="logo.svg" alt="" width="28" height="28" />
+      </span>
+      <span class="brand__name">maz</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#about" class="nav__link">About us</a>
+      <a href="#studio" class="nav__link">Studio</a>
+      <a href="#pricing" class="nav__link">Pricing</a>
+    </nav>
+
+    <div class="nav__right">
+      <button class="avatar" aria-label="Open profile">
+        <span class="avatar__ring"></span>
+        <span class="avatar__face">GA</span>
+        <span class="avatar__status" aria-hidden="true"></span>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO / HOME ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--magenta"></div>
+        <div class="hero__glow hero__glow--cyan"></div>
+        <div class="hero__noise"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>
+          <span class="dot"></span> AI GAME ENGINE · v2.0
+        </p>
+        <h1 class="hero__title" data-reveal>
+          Build games<br />
+          <span class="grad">at the speed</span><br />
+          of thought.
+        </h1>
+        <p class="hero__slogan" data-reveal>
+          maz turns a sentence into something playable. Describe the world,
+          the rules, the vibe — our AI handles the engine so you can keep
+          dreaming.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a href="#studio" class="btn btn--primary">
+            Start creating <span class="btn__arrow">&rarr;</span>
+          </a>
+          <a href="#about" class="btn btn--ghost">Watch the demo</a>
+        </div>
+
+        <div class="hero__stats" data-reveal>
+          <div class="stat">
+            <span class="stat__value"><span class="stat__num" data-count="120">0</span><span class="stat__suffix">k+</span></span>
+            <span class="stat__label">games shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span class="stat__num" data-count="40">0</span><span class="stat__suffix">s</span></span>
+            <span class="stat__label">idea → prototype</span>
+          </div>
+          <div class="stat">
+            <span class="stat__value"><span class="stat__num" data-count="99">0</span><span class="stat__suffix">%</span></span>
+            <span class="stat__label">no code needed</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span></span> scroll
+      </a>
+    </section>
+
+    <!-- marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>PHYSICS</span><span aria-hidden="true">✦</span>
+        <span>SHADERS</span><span aria-hidden="true">✦</span>
+        <span>LEVEL DESIGN</span><span aria-hidden="true">✦</span>
+        <span>NPC BRAINS</span><span aria-hidden="true">✦</span>
+        <span>MULTIPLAYER</span><span aria-hidden="true">✦</span>
+        <span>SOUND</span><span aria-hidden="true">✦</span>
+        <span>PHYSICS</span><span aria-hidden="true">✦</span>
+        <span>SHADERS</span><span aria-hidden="true">✦</span>
+        <span>LEVEL DESIGN</span><span aria-hidden="true">✦</span>
+        <span>NPC BRAINS</span><span aria-hidden="true">✦</span>
+        <span>MULTIPLAYER</span><span aria-hidden="true">✦</span>
+        <span>SOUND</span><span aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT US ===================== -->
+    <section class="about" id="about">
+      <div class="section__head">
+        <p class="section__kicker" data-reveal>// About us</p>
+        <h2 class="section__title" data-reveal>
+          We deleted the boring 90%<br />of making a game.
+        </h2>
+        <p class="section__lead" data-reveal>
+          Engines, pipelines, asset wrangling, endless tutorials. maz collapses
+          all of it into a conversation. You stay in the creative loop; the AI
+          does the heavy lifting underneath.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="card__index">01</span>
+          <h3 class="card__title">Describe it</h3>
+          <p class="card__body">
+            Type the game you see in your head. A neon runner, a cozy farm sim,
+            a boss rush — plain language is the only input.
+          </p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__index">02</span>
+          <h3 class="card__title">Watch it build</h3>
+          <p class="card__body">
+            Mechanics, levels, art direction and logic assemble live in front
+            of you. Tweak anything by just asking for the change.
+          </p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__index">03</span>
+          <h3 class="card__title">Ship it</h3>
+          <p class="card__body">
+            Export to web, desktop or mobile in one click. Your players are a
+            link away — no build farms, no headaches.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== STUDIO (whatever else) ===================== -->
+    <section class="studio" id="studio">
+      <div class="studio__text">
+        <p class="section__kicker" data-reveal>// The studio</p>
+        <h2 class="section__title" data-reveal>
+          A creative engine that <span class="grad">talks back</span>.
+        </h2>
+        <ul class="studio__list">
+          <li data-reveal><strong>Live AI co-pilot</strong> — suggests mechanics, balances difficulty, fixes bugs before you spot them.</li>
+          <li data-reveal><strong>Infinite assets</strong> — generate characters, tilesets and music that match your art style instantly.</li>
+          <li data-reveal><strong>One-prompt iteration</strong> — "make it harder", "add rain", "give the boss a second phase". Done.</li>
+        </ul>
+        <a href="#pricing" class="btn btn--primary" data-reveal>
+          Open the studio <span class="btn__arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="studio__panel" data-reveal>
+        <div class="panel">
+          <div class="panel__bar">
+            <span></span><span></span><span></span>
+            <em>maz://untitled-project</em>
+          </div>
+          <div class="panel__body">
+            <p class="prompt"><span class="prompt__you">you</span> a low-gravity skate game on a neon space station</p>
+            <p class="line"><span class="ok">✓</span> generating physics &amp; controls</p>
+            <p class="line"><span class="ok">✓</span> building 6 grind rails</p>
+            <p class="line"><span class="ok">✓</span> lighting: <b>neon · dusk</b></p>
+            <p class="line typing"><span class="run">▮</span> composing synthwave score…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="pricing">
+    <div class="footer__cta">
+      <h2 data-reveal>Your next game is one<br />sentence away.</h2>
+      <a href="#home" class="btn btn--primary btn--lg" data-reveal>
+        Try maz free <span class="btn__arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#home">
+          <span class="brand__logo"><img src="logo.svg" alt="" width="24" height="24" /></span>
+          <span class="brand__name">maz</span>
+        </a>
+        <p>Game creation made easy with AI.</p>
+      </div>
+
+      <nav class="footer__col">
+        <h4>Product</h4>
+        <a href="#pricing">Pricing</a>
+        <a href="#studio">Studio</a>
+        <a href="#">Templates</a>
+        <a href="#">Changelog</a>
+      </nav>
+      <nav class="footer__col">
+        <h4>Company</h4>
+        <a href="#about">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#">Press</a>
+      </nav>
+      <nav class="footer__col">
+        <h4>Community</h4>
+        <a href="#">Discord</a>
+        <a href="#">Showcase</a>
+        <a href="#">Docs</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 maz studio. Made for makers.</span>
+      <div class="footer__legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

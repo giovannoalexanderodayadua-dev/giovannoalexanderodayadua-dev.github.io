@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" stroke="currentColor" aria-label="maz logo">
+  <defs>
+    <clipPath id="frame">
+      <rect x="26" y="26" width="460" height="460" rx="10" />
+    </clipPath>
+  </defs>
+  <rect x="26" y="26" width="460" height="460" rx="10" stroke-width="34" />
+  <g clip-path="url(#frame)" stroke-width="44" stroke-linecap="butt">
+    <line x1="196" y1="10" x2="500" y2="314" />
+    <line x1="12" y1="198" x2="316" y2="502" />
+  </g>
+</svg>
