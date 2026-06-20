@@ -61,7 +61,7 @@
         <h1 class="hero__title" data-reveal>
           Build games<br />
           <span class="grad">at the speed</span><br />
-          of light.
+          of thought.
         </h1>
         <p class="hero__slogan" data-reveal>
           maz turns a sentence into something playable. Describe the world,
@@ -89,6 +89,14 @@
             <span class="stat__label">no code needed</span>
           </div>
         </div>
+      </div>
+
+      <!-- interactive neon maze minigame (replaces the old neon cube) -->
+      <div class="maze-wrap">
+        <div class="maze-card" id="mazeCard">
+          <canvas id="mazeCanvas"></canvas>
+        </div>
+        <p class="maze-hint" id="mazeHint">Move your cursor around the card</p>
       </div>
 
       <a href="#about" class="hero__scroll" aria-label="Scroll down">
@@ -242,6 +250,7 @@
     </div>
   </footer>
 
+  <script src="audio.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
